@@ -1,0 +1,59 @@
+name: github-pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble demo site
+        run: |
+          set -euo pipefail
+          rm -rf _site
+          mkdir -p _site/demo-decks
+          touch _site/.nojekyll
+          cp index.html _site/index.html
+          if command -v rsync >/dev/null 2>&1; then
+            rsync -a --delete demo-decks/ _site/demo-decks/
+          else
+            cp -a demo-decks/. _site/demo-decks/
+          fi
+          test -f _site/index.html
+          test -f _site/demo-decks/steel.html
+          test -f _site/demo-decks/cement.html
+          test -f _site/demo-decks/pharma.html
+          test -f _site/demo-decks/prescriptions-examples.html
+          test -f _site/demo-decks/clients/index.html
+          test -f _site/demo-decks/clients/lnm-auto-faridabad-technical/index.html
+          test -f _site/demo-decks/clients/nestle-pantnagar-technical/index.html
+          test -d _site/demo-decks/tech
+          echo "Site root:"
+          ls -la _site
+          echo "Demo decks (top):"
+          ls -la _site/demo-decks | head -40
+          echo "Clients:"
+          ls -la _site/demo-decks/clients | head -40
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
