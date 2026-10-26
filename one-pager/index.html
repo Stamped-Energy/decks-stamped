@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stamped Energy — One pager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="one-pager.css" />
+  </head>
+  <body>
+    <article class="sheet" id="sheet" aria-label="Stamped Energy one pager">
+      <header class="top">
+        <div class="brand">
+          <img class="brand-mark" src="assets/logo-mark.svg" width="36" height="36" alt="" />
+          <div class="brand-text">
+            <span class="brand-name">Stamped Energy</span>
+            <span class="brand-url">stamped.work</span>
+          </div>
+        </div>
+        <p class="eyebrow">Industrial AI</p>
+      </header>
+
+      <h1 class="headline">Catch rejections and energy losses while there is still time to act.</h1>
+
+      <section class="problem" aria-labelledby="problem-label">
+        <p id="problem-label" class="section-label">The gap</p>
+        <p class="problem-copy">
+          Rejections and wasted energy usually surface days after the shift decision that caused them.
+          The signals already sit in SCADA, ERP, CNC and VMC machines, and quality records, but rarely
+          become a clear next action for the floor.
+        </p>
+      </section>
+
+      <section class="flow" aria-labelledby="how-label">
+        <p id="how-label" class="section-label">How it works</p>
+        <div class="flow-grid">
+          <div class="flow-step">
+            <span class="step-num">1</span>
+            <h2 class="step-title">Connect</h2>
+            <p class="step-body">Read-only links to the systems your plant already runs.</p>
+          </div>
+          <div class="flow-connector" aria-hidden="true"></div>
+          <div class="flow-step">
+            <span class="step-num">2</span>
+            <h2 class="step-title">Learn</h2>
+            <p class="step-body">Models trained on your plant history learn what normal looks like and what comes before rejections or wasted energy.</p>
+          </div>
+          <div class="flow-connector" aria-hidden="true"></div>
+          <div class="flow-step">
+            <span class="step-num">3</span>
+            <h2 class="step-title">Act</h2>
+            <p class="step-body">Specific actions reach the person who can fix it, ranked by what it is costing you.</p>
+          </div>
+        </div>
+        <div class="flow-tags" aria-hidden="true">
+          <span>SCADA</span>
+          <span>ERP</span>
+          <span>CNC / VMC</span>
+          <span>Quality</span>
+          <span class="flow-tags-arrow">→</span>
+          <span class="flow-tags-highlight">Stamped</span>
+          <span class="flow-tags-arrow">→</span>
+          <span>Floor action</span>
+        </div>
+      </section>
+
+      <section class="results" aria-labelledby="results-label">
+        <p id="results-label" class="section-label">Results from deployments</p>
+        <div class="metrics">
+          <div class="metric">
+            <p class="metric-value"><span class="metric-prefix">~</span>30<span class="metric-suffix">%</span></p>
+            <p class="metric-caption">Average reduction in rejection rates</p>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric">
+            <p class="metric-value">&gt;10<span class="metric-suffix">%</span></p>
+            <p class="metric-caption">Energy savings</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="audience" aria-labelledby="audience-label">
+        <p id="audience-label" class="section-label">Built for</p>
+        <p class="audience-copy">
+          Plant heads and engineering leaders at <strong>forging shops</strong> and
+          <strong>auto-component plants</strong>, where quality, throughput and energy all move together.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <div class="founders">
+          <p class="section-label section-label--on-dark">Co-founders</p>
+          <ul class="founder-list">
+            <li>
+              <span class="founder-name">Utso Sarkar</span>
+              <span class="founder-meta">Co-founder · Undergrad, IIT Roorkee</span>
+            </li>
+            <li>
+              <span class="founder-name">Vinayak Raizada</span>
+              <span class="founder-meta">Co-founder · Undergrad, IIT Roorkee</span>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <a href="mailto:utso@stamped.work">utso@stamped.work</a>
+          <span class="contact-sep">·</span>
+          <a href="https://stamped.work">stamped.work</a>
+          <span class="contact-sep">·</span>
+          <a href="https://linkedin.com/in/utso">linkedin.com/in/utso</a>
+        </div>
+      </footer>
+    </article>
+  </body>
+</html>

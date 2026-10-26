@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Stamped Energy mark">
+  <!-- Eight-petal seal · Forge Coral. Flat outer edges, clockwise inner step, center star. -->
+  <g fill="#F75440" transform="translate(100 100)">
+    <!-- Petal faces up: outer flat, taper, stepped V for turbine bias -->
+    <path d="M-31.5,-86 L31.5,-86 L20,-38 L8,-46 L2,-30 L-10,-42 L-20,-38 Z"/>
+    <path d="M-31.5,-86 L31.5,-86 L20,-38 L8,-46 L2,-30 L-10,-42 L-20,-38 Z" transform="rotate(45)"/>
+    <path d="M-31.5,-86 L31.5,-86 L20,-38 L8,-46 L2,-30 L-10,-42 L-20,-38 Z" transform="rotate(90)"/>
+    <path d="M-31.5,-86 L31.5,-86 L20,-38 L8,-46 L2,-30 L-10,-42 L-20,-38 Z" transform="rotate(135)"/>
+    <path d="M-31.5,-86 L31.5,-86 L20,-38 L8,-46 L2,-30 L-10,-42 L-20,-38 Z" transform="rotate(180)"/>
+    <path d="M-31.5,-86 L31.5,-86 L20,-38 L8,-46 L2,-30 L-10,-42 L-20,-38 Z" transform="rotate(225)"/>
+    <path d="M-31.5,-86 L31.5,-86 L20,-38 L8,-46 L2,-30 L-10,-42 L-20,-38 Z" transform="rotate(270)"/>
+    <path d="M-31.5,-86 L31.5,-86 L20,-38 L8,-46 L2,-30 L-10,-42 L-20,-38 Z" transform="rotate(315)"/>
+  </g>
+</svg>
